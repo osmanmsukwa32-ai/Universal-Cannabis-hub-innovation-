@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+      content="width=device-width,
+      initial-scale-1.0">
+    <title>Universal Cannabis Hub 
+      Malawi</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+
+      <div class="tools">
+        <input
+          type="text"
+          id="searchIput"
+          placeholder="Search..."
+          onkeyup="searchContent()">
+
+        <button onclick="toggleDarkMode()">
+          Dark Mode
+        </button>
+      
+      </div>
+
+      <h1>Universal Cannabis Hub</h1>
+      <p>Malawi's Cannabis Information
+       & Technology Platform</p>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#farmers">Farmers</a>
+        <a href="#business">Business</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="#login">Login</a>
+      </nav>
+      
+    </header>
+
+    <main>
+
+      <section id="home" class="hero">
+        <h2>Welcome to Universal Cannabis 
+          Hub Malawi</h2>
+
+        <p>Information, technology and
+         business resource for Malawi's 
+        regulated cannabis industry.</p>
+
+        <button onclick="learnMore()">
+          Learn More
+        </button>
+
+      </section>
+
+      <section id="farmers" class="card">
+        <h2>Farmers</h2>
+
+        <p>Learn about farming information 
+        record, traceability and business 
+        management.</p>
+      </section>
+
+      <section id="business" class="card">
+        <h2>Business</h2>
+
+        <p>Discover business opportunities, 
+        licensed industry partcipants and 
+        technology services.</p>
+      </section>
+
+      <section id="education" class="card">
+        <h2>Education</h2>
+
+        <p>Learn about cannabis 
+        regulations, technology, processing 
+        and business.</p>
+      </section>
+
+      <section id="dashboard">
+        <h2>lndustry Dashboard</h2>
+
+        <div class="dashboard">
+          <div class="dashboard-card">
+            <h3>Farmers</h3>
+            <p>Management farming 
+              information and record.</p>
+
+            <button onclick="openDashboar
+              ('Farmers')">
+              Open
+            </button>
+        </div>
+
+          <div class="dashboard-card">
+            <h3>Business</h3>
+            <p>Management business profiles
+             and services.</p>
+            
+            <button onclick="openDashboar
+              ('Business')">
+              Open
+            </button>
+            </p>
+          </div>
+
+          <div class="dashboard-card">
+            <h3>Education</h3>
+            <p>Learn about regulations
+             and industry information.</p>
+
+            <button class="openDashboar
+              ('Education')">
+              Open
+            </button>
+          </div>
+        </div>
+
+          <p id="dashboardMessage"></p>
+      </section>
+
+      <section id="login" class="auth-section">
+        <h2>Login</h2>
+
+        <form id="loginForm">
+          <input
+            type="email"
+            id="loginEmail"
+            placeholder="Email"
+            required>
+
+          <input
+            type="password"
+            id="loginPassword"
+            placeholder="password"
+            required
+            
+            >
+
+          <button type="submit">
+            Login
+          </button>
+        </form>
+
+        <p id="loginMessage"></p>
+      </section>
+
+      <section>
+        <h2>Create Account</h2>
+
+        <form>
+          <input
+            type="text"
+            id="registerName"
+            placeholder="Full Name"
+            required>
+
+          <input
+            type="email"
+            id="registerEmail"
+            placeholder="Email"
+            required>
+
+          <input
+            type="password"
+            id="registerPassword"
+            placeholder="password"
+            required
+            >
+
+          <button type="submit">
+            Register 
+          </button>
+          
+        </form>
+
+        <p id="registerMessage"></p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email:Info@example.com</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Universal Cannabis Hub Malawi</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
